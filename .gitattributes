@@ -1,0 +1,2 @@
+1Mint.txt filter=lfs diff=lfs merge=lfs -text
+50Mint.txt filter=lfs diff=lfs merge=lfs -text
