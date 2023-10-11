@@ -1,48 +1,34 @@
 class LinkedList {
+
+    // Inner class represent node in LinkedList
     static class Node{
         private int data;
         private Node next;
 
+        // Constructor for creating a node with given data
         public Node(int data) {
             this.data = data;
             this.next = null;
         }
 
+        // Constructor for creating a node with given data and next node
         public Node(int data, Node next) {
             this.data = data;
-            this.next = next;
-        }
-
-        public int getData() {
-            return data;
-        }
-
-        public Node getNext() {
-            return next;
-        }
-
-        public void setData(int data) {
-            this.data = data;
-        }
-
-        public void setNext(Node next) {
             this.next = next;
         }
     }
 
     private Node head;
-    private int size;
 
-    public LinkedList() {
-    }
 
+    // Inserts a new node with the given data at the beginning of the LinkedList
     public void insertFirst(int data) {
         Node node = new Node(data);
-        node.setNext(head);
+        node.next = head;
         head = node;
-        size++;
     }
 
+    // Inserts a new node with given data at the end of the LinkedList
     public void insertLast(int data) {
         Node newNode = new Node(data);
         Node temp = head;
@@ -52,6 +38,7 @@ class LinkedList {
         temp.next = newNode;
     }
 
+    // Inserts a new node with the given data at the specified index in the LinkedList
     public void insertAt(int data, int index) {
         Node newNode = new Node(data);
         int current = 0;
@@ -65,6 +52,7 @@ class LinkedList {
         temp.next = newNode;
     }
 
+    // Returns data stored in node at the given index in LinkedList
     public int getAt(int index) {
         int current = 0;
         Node temp = head;
@@ -72,10 +60,7 @@ class LinkedList {
             temp = temp.next;
             current++;
         }
-        return temp.getData();
+        return temp.data;
     }
-
-
-
 
 }
