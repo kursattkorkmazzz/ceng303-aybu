@@ -4,7 +4,7 @@
 
 ### Yapılacaklar
 
-- [ ] LinkedList sınıfı oluşturulacak.
+- [x] LinkedList sınıfı oluşturulacak.
 - [x] DynamicArray Sınıfı oluşturulacak.
 - [x] 1Mint.txt ve 50Mint.txt verileri oluşturulacak.
 - [x] Operasyon 1 çözümü yapılacak.
@@ -15,7 +15,7 @@
 ### Görev Dağılımı
 
 1. **Esat:**
-   - [ ] LinkedList sınıfı oluşturma.
+   - [x] LinkedList sınıfı oluşturma.
 2. **Mehdi:**
    - [x] DynamicArray sınıfı oluşturma
    - [ ] Operasyon 3'ün çözümü.
