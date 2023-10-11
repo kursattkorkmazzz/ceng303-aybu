@@ -1,4 +1,4 @@
-
+package classes;
 public class DynamicArray {
 private int arr[];
 private int counter;
