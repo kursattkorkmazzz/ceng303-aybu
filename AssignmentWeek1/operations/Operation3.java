@@ -1,3 +1,5 @@
+package operations;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -22,7 +24,7 @@ public class Operation3 {
 		counter = 0;
 		this.index1 = index1;
 		this.index2 = index2;
-		
+		readFromFile();
 	}
 	
 	//Second constructor for just index1.
@@ -46,8 +48,7 @@ public class Operation3 {
 			
 			return true;
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e);
 		}
 		
 		return false;
@@ -129,15 +130,6 @@ public class Operation3 {
 		}
 		
 	}
-	
-	public static void main(String[] args) {
-		Operation3 op3_1 = new Operation3("1Mint.txt", 900000,9);
-		Operation3 op3_2 = new Operation3("50Mint.txt", 45000000);
-		boolean check  = op3_1.readFromFile();
-		op3_1.printStatus();
-		System.out.println("*****************************************");
-		boolean check2  = op3_2.readFromFile();
-		op3_2.printStatus();
-	}
+
 	
 }
