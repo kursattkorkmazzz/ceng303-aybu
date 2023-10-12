@@ -24,4 +24,4 @@
    - [x] Repo oluşturma
    - [x] Veri dosyasini olusturma.
 4. **Enes:**
-   - [ ] Operasyon 2 çözümü. **(Esat'ın LinkedList sınıfını bitirmesini bekle).**
+   - [ ] Operasyon 2 çözümü. **~~(Esat'ın LinkedList sınıfını bitirmesini bekle).~~**
