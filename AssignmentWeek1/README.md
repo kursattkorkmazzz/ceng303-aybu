@@ -4,9 +4,9 @@
 
 ### Requirements
 
-**1Mint.txt** : It holds 1 billion random generated integers.
+**1Mint.txt** : It holds 1 million random generated integers.
 
-**50Mint.txt** : It holds 50 billion random generated integers.
+**50Mint.txt** : It holds 50 million random generated integers.
 
 
 
