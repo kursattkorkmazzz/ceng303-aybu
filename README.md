@@ -9,7 +9,7 @@
 - [x] 1Mint.txt ve 50Mint.txt verileri oluşturulacak.
 - [x] Operasyon 1 çözümü yapılacak.
 - [ ] Oeprasyon 2 çözümü yapılacak.
-- [ ] Operasyon 3 çözümü yapılacak.
+- [x] Operasyon 3 çözümü yapılacak.
 - [ ] Tüm operasyonlar 1Mint.txt ve 50Mint.txt dosyaları kullanılarak çalıştırılacak ve ekran görüntüsü alınacak.
 
 ### Görev Dağılımı
@@ -18,7 +18,7 @@
    - [x] LinkedList sınıfı oluşturma.
 2. **Mehdi:**
    - [x] DynamicArray sınıfı oluşturma
-   - [ ] Operasyon 3'ün çözümü.
+   - [x] Operasyon 3'ün çözümü.
 3. **Kürşat:**
    - [x] Operasyon 1 çözümü.
    - [x] Repo oluşturma
