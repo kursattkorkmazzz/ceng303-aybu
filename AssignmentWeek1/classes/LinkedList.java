@@ -1,4 +1,6 @@
-class LinkedList {
+package classes;
+
+public class LinkedList {
 
     // Inner class represent node in LinkedList
     static class Node{
