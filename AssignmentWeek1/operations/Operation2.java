@@ -5,7 +5,8 @@ import java.time.LocalTime;
 
 public class Operation2 {
     private final String fileName;
-
+    private Long startTime;
+    private Long endTime;
     // Constructor for Operation2
     public Operation2(String fileName) {
         this.fileName = fileName;
@@ -14,74 +15,76 @@ public class Operation2 {
     LinkedList myList = new LinkedList();
 
     // Does all operations and prints the outputs
-    public void PrintStatus() throws IOException {
+    public void printStatus() throws IOException {
 
         // Builds the list and calculates the time
-        LocalTime startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
         buildList(myList, fileName);
-        LocalTime endTime = LocalTime.now();
-        long timeToBuildList = calculateElapsedTime(startTime, endTime);
+        endTime = System.currentTimeMillis();
 
-        System.out.println("2a) The integer list structure is built in " + timeToBuildList + " milliseconds.");
+        System.out.println("2a) The integer list structure is built in " + calculateTime() + " milliseconds.");
 
         // Inserts an integer into the head and calculates the time
-        startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
         myList.insertFirst(99);
-        endTime = LocalTime.now();
-        long timeToInsertHead = calculateElapsedTime(startTime, endTime);
+        endTime = System.currentTimeMillis();
 
-        System.out.println("2b) An integer is inserted into the first index of the integer list in " + timeToInsertHead + " milliseconds.");
+
+        System.out.println("2b) An integer is inserted into the first index of the integer list in " + calculateTime() + " milliseconds.");
 
         // recognises the file
         int index = findIndex(fileName);
 
         // Inserts an integer into the essential index and calculates the time
-        startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
         myList.insertAt(11, index);
-        endTime = LocalTime.now();
-        long timeToInsertBigIndex = calculateElapsedTime(startTime, endTime);
+        endTime = System.currentTimeMillis();
 
-        System.out.println("2c) An integer is inserted into the last index of the integer list in " + timeToInsertBigIndex + " milliseconds.");
+        System.out.println("2c) An integer is inserted into the last index of the integer list in " + calculateTime() + " milliseconds.");
 
         // Reads the integer from the essential index and calculates the time
-        startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
         int valueAtBigIndex = myList.getAt(index);
-        endTime = LocalTime.now();
-        long timeToReadBigIndex = calculateElapsedTime(startTime, endTime);
-        System.out.println("2d) An integer, which is " + valueAtBigIndex + ", is read from the index " + index + " of the integer list in " + timeToReadBigIndex + " milliseconds.");
+        endTime = System.currentTimeMillis();
+
+        System.out.println("2d) An integer, which is " + valueAtBigIndex + ", is read from the index " + index + " of the integer list in " + calculateTime() + " milliseconds.");
 
         // Reads the integer from index 9 and calculates the time
-        startTime = LocalTime.now();
+        startTime = System.currentTimeMillis();
         int valueAtIndex9 = myList.getAt(9);
-        endTime = LocalTime.now();
-        long readIndex9 = calculateElapsedTime(startTime, endTime);
+        endTime = System.currentTimeMillis();
 
-        System.out.println("2e) An integer, which is " + valueAtIndex9 + ", is read from the index 9 of the integer list in " + readIndex9 + " milliseconds.");
+        System.out.println("2e) An integer, which is " + valueAtIndex9 + ", is read from the index 9 of the integer list in " + calculateTime() + " milliseconds.");
     }
 
 
     // Builds an integer list that stores integers hold in files
     public void buildList(LinkedList myList, String fileName) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
+
         String line;
+        int counter = 0;
         while (true) {
-            if (!((line = bufferedReader.readLine()) != null)) break;
+            if (((line = bufferedReader.readLine()) == null)) break;
+
             int value = Integer.parseInt(line);
+
             myList.insertLast(value);
+            counter++;
         }
+
     }
 
-    // Method for calculating the elapsed time when needed
-    public static long calculateElapsedTime(LocalTime startTime, LocalTime endTime) {
-        return java.time.Duration.between(startTime, endTime).toMillis();
+    private long calculateTime(){
+        return endTime - startTime;
     }
 
 
     // Method for finding the proper index according to the filename
     public int findIndex(String file) {
-        if (file.equals("1Mint.txt")) {
+        if (file.contains("1Mint.txt")) {
             return 900000;
-        } else if (file.equals("50Mint.txt")) {
+        } else if (file.contains("50Mint.txt")) {
             return 45000000;
         } else {
             return -1;

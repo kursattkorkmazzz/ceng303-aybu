@@ -20,8 +20,8 @@ public class LinkedList {
         }
     }
 
-    private Node head;
-
+    private Node head = null;
+    private Node tail = null;
 
     // Inserts a new node with the given data at the beginning of the LinkedList
     public void insertFirst(int data) {
@@ -33,11 +33,15 @@ public class LinkedList {
     // Inserts a new node with given data at the end of the LinkedList
     public void insertLast(int data) {
         Node newNode = new Node(data);
-        Node temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
+
+        if(head == null){
+            head = newNode;
+            tail = head;
+            return;
         }
-        temp.next = newNode;
+        tail.next = newNode;
+        tail = newNode;
+
     }
 
     // Inserts a new node with the given data at the specified index in the LinkedList

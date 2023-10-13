@@ -1,5 +1,12 @@
 # **Assignment Week 1**
 
+### Collaborators
+
+* Enes
+* Mehdi
+* Esat
+* Kürşat
+
 
 
 ### Requirements
