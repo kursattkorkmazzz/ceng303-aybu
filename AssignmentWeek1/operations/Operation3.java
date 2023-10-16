@@ -1,7 +1,9 @@
+package operations;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
+import classes.DynamicArray;
 
 public class Operation3 {
 	private String filename;
