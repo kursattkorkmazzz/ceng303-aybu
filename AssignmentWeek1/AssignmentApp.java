@@ -54,7 +54,7 @@ public class AssignmentApp {
 
         // Operation 3 for 50Mint.txt
         System.out.println("\n==================== OUTPUT for Operation3 with 50Mint.txt ====================\n");
-        Operation3 op3_2 = new Operation3(pathFor50M, 45000000);
+        Operation3 op3_2 = new Operation3(pathFor50M, 45000000,9);
         op3_2.printStatus();
 
 
