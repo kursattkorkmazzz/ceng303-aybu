@@ -44,3 +44,16 @@ java -jar AssignmentWeek1.jar 1Mint.txt 50Mint.txt
 - **classes** : Contains utility arrays which are LinkedList and DynamicArray.
 - **operations** : Contains operation classes that are complete operations and print out results.
 -  **AssignmentApp.java** : This is main class. Its job is importing operations and running them.  
+
+
+
+### Screenshots
+
+
+
+|          1Mint.txt           |          50Mint.txt          |
+| :--------------------------: | :--------------------------: |
+| ![](./screenshots/op1_1.png) | ![](./screenshots/op1_2.png) |
+| ![](./screenshots/op2_1.png) | ![](./screenshots/op2_2.png) |
+| ![](./screenshots/op3_1.png) | ![](./screenshots/op3_2.png) |
+
