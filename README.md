@@ -10,7 +10,7 @@
 - [x] Operasyon 1 çözümü yapılacak.
 - [x] Operasyon 2 çözümü yapılacak.
 - [x] Operasyon 3 çözümü yapılacak.
-- [ ] Tüm operasyonlar 1Mint.txt ve 50Mint.txt dosyaları kullanılarak çalıştırılacak ve ekran görüntüsü alınacak.
+- [x] Tüm operasyonlar 1Mint.txt ve 50Mint.txt dosyaları kullanılarak çalıştırılacak ve ekran görüntüsü alınacak.
 
 ### Görev Dağılımı
 
