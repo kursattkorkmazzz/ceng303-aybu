@@ -27,6 +27,9 @@ public class AssignmentApp {
         Operation1 operation1_2 = new Operation1(pathFor50M,50_000_000);
         operation1_2.printStatus(45_000_000,9);
 
+        operation1_1 = null;
+        operation1_2 = null;
+
         // Operation 2 for 1Mint.txt
         System.out.println("\n==================== OUTPUT for Operation2 with 1Mint.txt ====================\n");
         Operation2 operation2_1 = new Operation2(pathFor1M);
@@ -45,6 +48,8 @@ public class AssignmentApp {
         }catch (Exception e){
             return;
         }
+        operation2_1 = null;
+        operation2_2 = null;
 
 
         // Operation 3 for 1Mint.txt
@@ -57,6 +62,8 @@ public class AssignmentApp {
         Operation3 op3_2 = new Operation3(pathFor50M, 45000000,9);
         op3_2.printStatus();
 
+        op3_1 = null;
+        op3_2 = null;
 
 
     }
