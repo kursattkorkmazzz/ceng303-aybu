@@ -37,7 +37,7 @@ public class Operation2 {
 
         // Inserts an integer into the essential index and calculates the time
         startTime = System.currentTimeMillis();
-        myList.insertAt(11, index);
+        myList.insertLast(11);
         endTime = System.currentTimeMillis();
 
         System.out.println("2c) An integer is inserted into the last index of the integer list in " + calculateTime() + " milliseconds.");
