@@ -57,7 +57,7 @@ public class Operation3 {
 		System.out.println("3b) An integer is inserted into the first index of the integer array in "+time+" milliseconds.");
 		
 		this.start = System.currentTimeMillis();
-		dy.insertFirst(9910);
+		dy.insertLast(9910);
 		this.stop = System.currentTimeMillis();
 		this.time = this.stop - this.start;
 		System.out.println("3c) An integer is inserted into the last index of the integer array in "+time+" milliseconds.");
@@ -76,7 +76,11 @@ public class Operation3 {
 			this.time = this.stop - this.start;
 			System.out.println("3e) An integer, which is “"+item2+"”, is read from the index "+index2+" of the integer \n" +
 	                "array in "+time+" milliseconds.");
-		}		
+		}	
+		
+		for(int i=0; i<1000; i++) {
+			System.out.println(dy.readIntFromIndex(i));
+		}
 	}
 
 }
