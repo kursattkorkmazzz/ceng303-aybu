@@ -1,4 +1,3 @@
-package classes;
 public class DynamicArray {
 private int arr[];
 private int counter;
@@ -8,12 +7,13 @@ private int arraysize;
 public DynamicArray() {
 	
 	arr = new int[1];
-	arraysize =1;
+	arraysize =0;
 	counter = 0;
 }
 
 // If we do not have enough size this method doubling size
 public void growSize() {
+	if(arraysize == 0) arraysize = 1;
 	int temp[] = null;
 	temp = new int[arraysize * 2];
 	
