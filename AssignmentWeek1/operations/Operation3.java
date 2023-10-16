@@ -78,9 +78,6 @@ public class Operation3 {
 	                "array in "+time+" milliseconds.");
 		}	
 		
-		for(int i=0; i<1000; i++) {
-			System.out.println(dy.readIntFromIndex(i));
-		}
 	}
 
 }
