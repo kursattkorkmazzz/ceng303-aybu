@@ -21,13 +21,8 @@ public class Operation3 {
 		readFromFile();
 	}
 	
-	//Second constructor for just index1.
-	public Operation3(String filename, int index1) {
-		this.filename = filename;
-		this.index1 = index1;
-		
-	}
 	
+	//Read the data from file and put them to a dynamic array
 	public boolean readFromFile(){
 		try {
 			
@@ -44,7 +39,8 @@ public class Operation3 {
 		
 		return false;
 	}
-	
+
+	// it prints all situation which the assignment want and it calculates how much time passed in millisecconds.
 	public void printStatus() {
 		this.start = System.currentTimeMillis();
 		readFromFile();
@@ -71,14 +67,14 @@ public class Operation3 {
 		System.out.println("3d) An integer, which is “"+item+"”, is read from the index "+index1+" of the integer \n" +
                 "array in "+time+" milliseconds.");
 		
-		if(index2 != 0) {
-			this.start = System.currentTimeMillis();
-			int item2 = dy.readIntFromIndex(index2);
-			this.stop = System.currentTimeMillis();
-			this.time = this.stop - this.start;
-			System.out.println("3e) An integer, which is “"+item2+"”, is read from the index "+index2+" of the integer \n" +
-	                "array in "+time+" milliseconds.");
-		}	
+		
+		this.start = System.currentTimeMillis();
+		int item2 = dy.readIntFromIndex(index2);
+		this.stop = System.currentTimeMillis();
+		this.time = this.stop - this.start;
+		System.out.println("3e) An integer, which is “"+item2+"”, is read from the index "+index2+" of the integer \n" +
+	        "array in "+time+" milliseconds.");
+			
 		
 	}
 
