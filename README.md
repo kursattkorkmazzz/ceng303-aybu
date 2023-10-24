@@ -4,7 +4,7 @@
 
 ### Yapılacaklar
 
-Beyler aldığınız görevin sonuna isminizi yazıp bitirince başına tik koyar mısınız?
+Aldığınız görevin sonuna isminizi yazıp bitirince başına tik koyun.
 
 - [ ] Sorting Algoritmaları Yazılacak
     - [ ] Merge Sort Yazılacak.
