@@ -4,6 +4,8 @@
 
 ### Yapılacaklar
 
+Beyler aldığınız görevin sonuna isminizi yazıp bitirince başına tik koyar mısınız?
+
 - [ ] Sorting Algoritmaları Yazılacak
     - [ ] Merge Sort Yazılacak.
     - [ ] Quick Sort Yazılacak.
