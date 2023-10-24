@@ -1,5 +1,38 @@
 # CENG 303 AYBU
 
+## Assignment #2
+
+### Yapılacaklar
+
+- [ ] Sorting Algoritmaları Yazılacak
+    - [ ] Merge Sort Yazılacak.
+    - [ ] Quick Sort Yazılacak.
+    - [ ] Insertation Sort Yazılacak.
+    - [ ] Heap Sort Yazılacak.
+    - [ ] AVL Sort Yazılacak.
+
+- [ ] Servisler yazılacak.
+    - [ ] Data Fetch API yazılacak.
+
+- [ ] AssignmentApp yazılarak tüm sınıflar bileştirilecek.
+
+### Görev Dağılımı
+
+1. **Esat:**
+    - [ ] Task
+2. **Mehdi:**
+    - [ ] Task
+3. **Kürşat:**
+    - [ ] Task
+4. **Enes:**
+    - [ ] Task
+
+
+
+------
+
+
+
 ## Assignment #1
 
 ### Yapılacaklar
